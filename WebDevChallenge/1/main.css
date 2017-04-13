@@ -85,6 +85,8 @@ body {
     font-family: inherit;
     font-size: 1.6em;
 	z-index: 1;
+    position: relative;
+    cursor: pointer;
 }
 
 .form__textarea {
@@ -237,13 +239,13 @@ span.icon-triangle-down {
     margin-right: 12px;
     font-size: 20px;
     color: #DEDEDE;
-    z-index: 0;
+    z-index: 1;
 }
 
 i.fa.fa-caret-down {
     margin-left: -25px;
     color: #dedede;
-    z-index: 0;
+    z-index: -1;
 }
 
 
