@@ -108,8 +108,6 @@ select.form__input--select {
 	-moz-appearance: none;
 	-webkit-appearance: none;
     width: 100%;
-    padding-left: 0px;
-    text-indent: 82px;
 }
 .form__inline {
     display: flex;
@@ -127,6 +125,7 @@ select.form__input--select {
 }
 ::-moz-placeholder {
     color: #a4a4a4;
+    opacity: 1;
 }
 :-ms-input-placeholder {
     color: #a4a4a4;
