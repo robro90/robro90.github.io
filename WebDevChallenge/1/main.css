@@ -108,6 +108,8 @@ select.form__input--select {
 	-moz-appearance: none;
 	-webkit-appearance: none;
     width: 100%;
+    padding-left: 0px;
+    text-indent: 82px;
 }
 .form__inline {
     display: flex;
