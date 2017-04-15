@@ -151,7 +151,6 @@ select.form__input--select {
 .form__checkbox {
     width: auto;
     padding: 0;
-    margin: 0;
 }
 .form__checkbox--input {
     margin-bottom: 20px;
@@ -159,6 +158,8 @@ select.form__input--select {
 
 input[type=checkbox] {
     opacity: 0;
+    margin: 0;
+    position: absolute;
 }
 input[type="checkbox"] + label {
 	position: relative;
@@ -212,7 +213,6 @@ input[type="checkbox"]:checked:focus + label::before {
 
 .form__checkbox--label {
     padding-left: 40px;
-    margin-left: -16px;
 }
 
 /* BUTTONS */
