@@ -17,7 +17,7 @@ body {
 	max-width: 1080px;
 	margin: 0 auto 55px auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .container__column {
@@ -45,6 +45,10 @@ body {
     text-indent: -3333px;
 }
 /* FORMS */
+.form__box {
+    margin-top: 60px;
+}
+
 .form__title {
 	color: #fff;
 	text-shadow: 0 2px 0 #000;
@@ -108,7 +112,8 @@ body {
 
 .form__textarea {
 	resize: none;
-	height: 300px;
+	width: 100%;
+    height: 250px;
     border: 1px solid rgba(128, 128, 128, 0.27);
     padding: 10px 30px 10px 15px;
 }
@@ -165,7 +170,7 @@ input[type="checkbox"] + label {
 	position: relative;
     cursor: pointer;
     display: inline-flex;
-    line-height: 1.6em;
+    line-height: 1.8em;
 }
 
 input[type="checkbox"]:focus + label:before {
@@ -283,11 +288,14 @@ i.fa.fa-caret-down {
 
 
 @media screen and (max-width: 900px) {
-	.container__column {
+    .main__container {
+        justify-content: space-around;
+    }
+    .container__column {
 		margin: 0 auto;
-		width: 98%;
+		width: 90%;
 	}
-    .main__logo-top, main__logo-bottom {
+    img.main__logo-top, img.main__logo-bottom {
 		width: 80%;
 	}
     .form__button {
