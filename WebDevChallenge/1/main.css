@@ -320,5 +320,6 @@ i.fa.fa-caret-down {
     }
     .form__input {
         font-size: 1.4em;
+        width: 100%;
     }
 }
