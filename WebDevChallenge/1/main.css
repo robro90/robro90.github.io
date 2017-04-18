@@ -35,9 +35,11 @@ body {
     margin-top: 55px;
     opacity: 0.25;
 }
-
+.main__footer {
+    margin-top: 90px;
+}
 /* LOGO */
-.main__logo-top, .main__logo-bottom {
+img.main__logo-top, img.main__logo-bottom {
     -webkit-filter: drop-shadow(0 -2px 0 #666);
 	filter: drop-shadow(0 -2px 0 #666)
 }
