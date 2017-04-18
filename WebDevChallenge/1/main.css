@@ -33,7 +33,7 @@ body {
     width: 100%;
     text-align: center;
     margin-top: 55px;
-    opacity: 0.25;
+    
 }
 .main__footer {
     margin-top: 90px;
@@ -41,7 +41,8 @@ body {
 /* LOGO */
 img.main__logo-top, img.main__logo-bottom {
     -webkit-filter: drop-shadow(0 -2px 0 #666);
-	filter: drop-shadow(0 -2px 0 #666)
+	filter: drop-shadow(0 -2px 0 #666);
+    opacity: 0.25;
 }
 .main__header h1 {
     text-indent: -3333px;
