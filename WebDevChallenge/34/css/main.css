@@ -7,7 +7,7 @@
   src: url("../fonts/Rockwell-Italic.woff2") format("woff2"), url("../fonts/Rockwell-Italic.woff") format("woff"); }
 
 body {
-    background-color: #000000;
+    background-color: #f4f4f4;
     margin: 0 auto;
     
 }
@@ -15,6 +15,11 @@ body {
 /** HEADER **/
 .header {
     background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
 .header__block {
     max-width: 1170px;
@@ -108,6 +113,13 @@ a.header__phone {
     height: 36px;
 }
 /** MAIN **/
+main {
+    position: relative;
+}
+.home__heading, .services__heading {
+    position: absolute;
+    text-indent: -9999px;
+}
 /** SECTIONS **/
 /* HOME */
 .home {
@@ -125,16 +137,13 @@ a.header__phone {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
-    
+    justify-content: center; 
 }
-
 .home__title {
     font-family: 'Rockwell';
     font-size: 48px;
     color: #ffffff;
-    margin: 0 0 22px 0;
+    margin: 22px 0 22px 0;
 }
 .home__subtitle {
     font-family: Raleway;
@@ -143,7 +152,7 @@ a.header__phone {
     margin: 22px 0 22px 0;      
 }
 img.home__symbol {
-    margin: 22px 0 44px 0;
+    margin: 22px 0 62px 0;
 }
 .home__domainsbox {
     position: relative;
@@ -183,7 +192,62 @@ input.home__input, .home__select, .home__button {
 }
 .home__button {
     background-color: #ffe13e;
+    padding: 15px 22px 15px 22px;
     font-size: 14px;
     font-weight: 700;
     color: #ffffff;
+    border-left: 1px solid #ffffff;
+}
+/* Services */
+.services__block {
+    display: flex;
+    max-width: inherit;
+    margin: 0 auto;
+}
+.service__hosting, .service__domains {
+    width: 50%;
+    height: auto;
+    padding: 80px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.service__hosting {
+    background-color: #202242;
+}
+.service__domains {
+    background-color: #ffe13e;
+}
+.service__title {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 38px;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.service__description {
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin: 16px 0 40px;
+}
+.service__button {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    padding: 16px 50px;
+}
+.service__head {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 133px;
+    line-height: 169px;
+    color: #202242;
 }
