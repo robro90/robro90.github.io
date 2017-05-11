@@ -201,7 +201,7 @@ input.home__input, .home__select, .home__button {
 /* Services */
 .services__block {
     display: flex;
-    max-width: inherit;
+    max-width: 1170px;
     margin: 0 auto;
 }
 .service__hosting, .service__domains {
