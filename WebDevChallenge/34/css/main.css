@@ -7,7 +7,7 @@
   src: url("../fonts/Rockwell-Italic.woff2") format("woff2"), url("../fonts/Rockwell-Italic.woff") format("woff"); }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     margin: 0 auto;
     
 }
@@ -116,7 +116,7 @@ a.header__phone {
 main {
     position: relative;
 }
-.header__heading, .home__heading, .services__heading {
+.header__heading, .home__heading, .services__heading, .features__heading, .clients__heading {
     position: absolute;
     text-indent: -9999px;
 }
@@ -201,23 +201,31 @@ input.home__input, .home__select, .home__button {
 /* Services */
 .services__block {
     display: flex;
-    max-width: 1170px;
     margin: 0 auto;
+    flex-wrap: nowrap;
 }
+
 .service__hosting, .service__domains {
     width: 50%;
     height: auto;
-    padding: 80px 80px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 .service__hosting {
     background-color: #202242;
+    justify-content: flex-end;
 }
 .service__domains {
     background-color: #ffe13e;
+    justify-content: flex-start;
+}
+.service__item {
+    width: 585px;
+    height: auto;
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .service__title {
     font-family: Raleway;
@@ -226,6 +234,7 @@ input.home__input, .home__select, .home__button {
     color: #ffffff;
     margin-top: 50px;
     margin-bottom: 20px;
+    padding: 0px 30px;
 }
 .service__description {
     font-family: Raleway;
@@ -234,6 +243,7 @@ input.home__input, .home__select, .home__button {
     color: #ffffff;
     text-align: center;
     margin: 16px 0 40px;
+    padding: 0px 80px;
 }
 .service__button {
     font-family: Raleway;
@@ -250,4 +260,89 @@ input.home__input, .home__select, .home__button {
     font-size: 133px;
     line-height: 169px;
     color: #202242;
+}
+/* Features */
+.features {
+    background: url(/images/atom_bg.png) #fbf8f1 center 90px no-repeat;
+}
+.features__block {
+    max-width: 1170px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 0 80px 0;
+}
+.features__title {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 48px;
+    color: #202242;
+}
+.features__subtitle {
+    font-family: Raleway;
+    font-size: 24px;
+    color: #202242;
+    margin-top: 10px;
+    padding-bottom: 70px;
+}
+.features__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.feature__item {
+    width: 25%;
+}
+.feature__icon {
+    margin-bottom: 50px;
+    position: relative;
+}
+.feature__icon::after {
+    content: '';
+    position: absolute;
+    width: 68px;
+    border-bottom: 3px solid #8d8d99;
+    bottom: -24px;
+    right: 50%;
+    transform:translateX(50%);
+}
+.feature__name {
+    font-family: 'Rockwell';
+    font-size: 30px;
+    color: #ffe13e;
+    margin-top: px;
+}
+.feature__description {
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 24px;
+    color: #202242;
+    padding: 0 25px;
+}
+/* Clients */
+.clients__block {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.clients__items {
+    width: 30%;
+}
+.clients__logos {
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+}
+.clients__title {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 36px;
+    color: #202242;
+}
+.clients__description {
+    font-family: Raleway;
+    font-size: 16px;
+    line-height: 24px;
+    color: #adadad;
 }
