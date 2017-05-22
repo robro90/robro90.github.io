@@ -9,13 +9,14 @@
 .main {
     margin: 0 auto;
     background-color: #FF0000;
-    width: 80%;
+    width: 830px;
+    padding: 50px 0;
 }
 .section {
     background-color: #1400FF;
     width: 670px;
     height: 380px;
-    margin: 0 auto;
+    margin: 30px auto;
     position: relative
 }
 .section::before {
@@ -36,4 +37,10 @@
     top: 0;
     right: 0;
     margin: 40px;
+}
+
+@media screen and (max-width: 834px) {
+    .main {
+        width: 100%;
+    }
 }
