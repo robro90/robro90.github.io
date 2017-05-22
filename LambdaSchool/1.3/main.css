@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+}
+.header {
+    background-color: #82007F;
+    height: 15vh;
+    width: 100%;
+}
+.main {
+    margin: 0 auto;
+    background-color: #FF0000;
+    width: 80%;
+}
+.section {
+    background-color: #1400FF;
+    width: 670px;
+    height: 380px;
+    margin: 0 auto;
+    position: relative
+}
+.section::before {
+    content: '';
+    position: absolute;
+    background-color: #FFFF0E;
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+}
+
+.section::after {
+    content: '';
+    position: absolute;
+    background-color: #00820C;
+    width: 400px;
+    height: 240px;
+    top: 0;
+    right: 0;
+    margin: 40px;
+}
