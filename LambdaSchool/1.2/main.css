@@ -1,0 +1,31 @@
+* {
+    
+    margin: 0;
+}
+header {
+    background-color: #FF0000;
+    height: 10vh;
+    width: 100%;
+}
+.main {
+    width: 100%;
+    display: flex;
+}
+.section {
+    width: 33.33%;
+    height: 90vh;
+}
+.section__one {
+    background-color: #1400FF;
+}
+.section__two {
+    background-color: #82007F;
+}
+.section__three {
+    background-color: #FFFF0E;
+}
+.footer {
+    background-color: #006D0A;
+    height: 10vh;
+    width: 100%;
+}
