@@ -1,0 +1,31 @@
+* {
+    
+    margin: 0;
+}
+header {
+    background-color: #FF0000;
+    height: 10vh;
+    width: 100%;
+}
+main {
+    width: 100%;
+    display: flex;
+}
+.content {
+    background-color: #1400FF;
+    width: 80%;
+    height: 90vh;
+    margin: 0 auto;
+}
+.sidebar {
+    background-color: #FFFF0E;
+    width: 10%;
+    height: 100vh;
+}
+footer {
+    background-color: #006D0A;
+    height: 10vh;
+    width: 80%;
+    margin: -10vh auto 0 auto;
+    
+}
